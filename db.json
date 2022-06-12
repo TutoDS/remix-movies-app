@@ -1,0 +1,16 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "name": "Marcos",
+      "message": "yooooo soo good!!",
+      "movieId": "2baf70d1-42bb-4437-b551-e5fed5a87abe"
+    },
+    {
+      "name": "User Test",
+      "message": "This is a test!",
+      "movieId": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
+      "id": 3
+    }
+  ]
+}
