@@ -122,8 +122,6 @@ export default function MovieInfo() {
 
 					<div className={'flex flex-1 flex-col'}>
 						<Outlet />
-
-						{/*<CommentsList movieId={movie.id} comments={movie.comments} />*/}
 					</div>
 				</div>
 			</section>
