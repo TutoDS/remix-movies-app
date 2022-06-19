@@ -32,7 +32,7 @@ const getMovieByID = async (id: string) => {
 	/**
 	 * Get Movie Comments
 	 */
-	const comments = await getCommentsByMovie(id);
+	// const comments = await getCommentsByMovie(id);
 
 	/**
 	 * Get characters info, fetching using
@@ -44,7 +44,7 @@ const getMovieByID = async (id: string) => {
 			.map((url: string) => fetch(url).then((res) => res.json()))
 	);
 
-	return json({ ...movie, comments, characters });
+	return json({ ...movie, characters });
 };
 
 const getMovieCharacter = async (id: string) => {

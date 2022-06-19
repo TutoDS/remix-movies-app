@@ -1,4 +1,4 @@
-import type { LoaderFunction, MetaFunction } from '@remix-run/node';
+import type { LoaderFunction, MetaFunction , ActionFunction} from '@remix-run/node';
 import { Outlet, useLoaderData, useNavigate } from '@remix-run/react';
 import invariant from 'tiny-invariant';
 import type { Movie } from '~/@types/Movie';
@@ -6,7 +6,7 @@ import { getMovieByID } from '~/api/movies';
 import { CharacterLabel } from '~/components/CharacterLabel';
 import type { Character } from '~/@types/Character';
 import { CommentsList } from '~/components/comments/List';
-import { ActionFunction, redirect } from '@remix-run/node';
+import { redirect } from '@remix-run/node';
 import { addComment } from '~/api/comment';
 
 export const meta: MetaFunction = ({ data }) => {
@@ -123,7 +123,7 @@ export default function MovieInfo() {
 					<div className={'flex flex-1 flex-col'}>
 						<Outlet />
 
-						<CommentsList movieId={movie.id} comments={movie.comments} />
+						{/*<CommentsList movieId={movie.id} comments={movie.comments} />*/}
 					</div>
 				</div>
 			</section>
